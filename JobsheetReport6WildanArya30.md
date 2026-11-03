@@ -40,7 +40,7 @@ git config --global user.email "your-email@example.com"
 
 ### 2.1.2 Running Results / Output Screenshot
 
-> Insert the screenshot of the terminal after the two git config commands here. (To be completed - no screenshot has been provided yet.)
+> ![Screenshot Program](https://raw.githubusercontent.com/username/nama-repository/main/images/foto.png)
 
 ---
 
@@ -67,7 +67,7 @@ The file is StudiKasus130.java, inside the repository PraktikumDaspro30. The job
 ```java
 import java.util.Scanner;
 
-public class StudiKasus130 {
+public class experiment1_30 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -112,7 +112,7 @@ The program has two if statements. The first one checks whether totalHarga is at
 
 ### 2.3.2 Running Results / Output Screenshot
 
-> Insert the screenshot of the program output here. (To be completed - no screenshot has been provided yet.)
+> ![Screenshot Program](https://raw.githubusercontent.com/username/nama-repository/main/images/foto.png)
 
 ---
 
@@ -128,7 +128,7 @@ The file is StudiKasus230.java, inside the same repository. The job sheet did no
 
 import java.util.Scanner;
 
-public class StudiKasus230 {
+public class Experiment2_30 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -221,7 +221,7 @@ For Git, the job sheet asks for at least 2 commits. The example messages in the 
 
 ### 2.4.2 Running Results / Output Screenshot
 
-> Insert the screenshots of the test results here (one for each test case below). (To be completed - no screenshot has been provided yet.)
+> ![Screenshot Program](https://raw.githubusercontent.com/username/nama-repository/main/images/foto.png)
 
 ---
 
@@ -249,4 +249,4 @@ The job sheet gives a note: always Pull before starting work on a shared reposit
 
 ### 2.5.2 Running Results / Output Screenshot
 
-> Insert the screenshots here: the collaborator invitation, the clone of the classmate's repository, the test results in README.md, and the commit history. (To be completed - no screenshots have been provided yet.)
+> ![Screenshot Program](https://raw.githubusercontent.com/username/nama-repository/main/images/foto.png)
