@@ -51,8 +51,6 @@ This experiment creates a repository on GitHub, copies it to the computer (clone
 
 ### 2.2.2 My repository link
 
-> Insert the screenshots here: the repository creation page, the cloned folder in Visual Studio Code, the README.md file with status U, the commit, and the GitHub page showing README.md. (To be completed - no screenshots have been provided yet.)
-
 Repository link: (https://github.com/wildanarya1209-collab/PraktikumDaspro30.git)
 
 ---
