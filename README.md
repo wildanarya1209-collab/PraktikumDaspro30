@@ -1,4 +1,7 @@
-Ini adalah repository pertama saya
-Nama : Wildan Arya Indradiansyah
-NIM : 264107020257
-Kelas : TI-1I
+# JOBSHEET 6 - CASE STUDY: SELECTION STRUCTURES WITH GIT AND GITHUB
+
+## Student Identity
+
+- Name: Wildan Arya Indradiansyah
+- Student ID (NIM): 264107020257
+- Class / No. Attendance : TI-1I / 30
