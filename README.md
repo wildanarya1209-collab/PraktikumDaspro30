@@ -6,7 +6,7 @@
 - Student ID (NIM): 264107020257
 - Class / No. Attendance : TI-1I / 30
 
-  # Test Results by <Aji Seto>
+  # Test Results by <Aji Seto
 
 Based on the test results, Aji Seto performed four trials with different conditions.
 
