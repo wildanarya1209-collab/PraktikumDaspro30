@@ -71,36 +71,38 @@ public class StudiKasus130 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int hargaPerCup = 18000;
-        int jumlahCup, uangBayar;
-        int totalHarga, diskon, totalBayar;
-        int kembalian, kurang;
+        int pricePerCup = 18000;
+        int numberOfCups, payment;
+        int totalPrice, discount, totalPayment;
+        int change, shortage;
 
-        System.out.print("Masukkan jumlah cup  : ");
-        jumlahCup = sc.nextInt();
-        System.out.print("Masukkan uang bayar  : ");
-        uangBayar = sc.nextInt();
+        System.out.print("Enter the number of cups : ");
+        numberOfCups = sc.nextInt();
 
-        totalHarga = jumlahCup * hargaPerCup;
-        diskon = 0;
+        System.out.print("Enter payment amount     : ");
+        payment = sc.nextInt();
 
-        if (totalHarga >= 100000) {
-            diskon = totalHarga * 10 / 100;
+        totalPrice = numberOfCups * pricePerCup;
+        discount = 0;
+
+        if (totalPrice >= 100000) {
+            discount = totalPrice * 10 / 100;
         }
 
-        totalBayar = totalHarga - diskon;
+        totalPayment = totalPrice - discount;
 
-        System.out.println("Total harga          : Rp " + totalHarga);
-        System.out.println("Diskon               : Rp " + diskon);
-        System.out.println("Total bayar          : Rp " + totalBayar);
+        System.out.println("Total price              : Rp " + totalPrice);
+        System.out.println("Discount                 : Rp " + discount);
+        System.out.println("Total payment            : Rp " + totalPayment);
 
-        if (uangBayar >= totalBayar) {
-            kembalian = uangBayar - totalBayar;
-            System.out.println("Kembalian            : Rp " + kembalian);
+        if (payment >= totalPayment) {
+            change = payment - totalPayment;
+            System.out.println("Change                   : Rp " + change);
         } else {
-            kurang = totalBayar - uangBayar;
-            System.out.println("Uang tidak cukup, kurang Rp " + kurang);
+            shortage = totalPayment - payment;
+            System.out.println("Insufficient payment. You need Rp " + shortage + " more.");
         }
+
         sc.close();
     }
 }
@@ -123,69 +125,90 @@ The Student Affairs Division of Politeknik Negeri Malang gives award funds to st
 The file is StudiKasus230.java, inside the same repository. The job sheet did not come with a finished code, so this code was written from the job sheet description.
 
 ```java
+
 import java.util.Scanner;
 
 public class StudiKasus230 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Nama mahasiswa : ");
-        String nama = sc.nextLine();
-        System.out.print("Jenis kegiatan (BELMAWA/BAKORMA/MANDIRI/PKM/LAINNYA) : ");
-        String jenis = sc.nextLine();
+        System.out.print("Student name : ");
+        String studentName = sc.nextLine();
 
-        if (jenis.equalsIgnoreCase("BELMAWA") || jenis.equalsIgnoreCase("BAKORMA")
-                || jenis.equalsIgnoreCase("MANDIRI")) {
+        System.out.print("Activity type (BELMAWA/BAKORMA/MANDIRI/PKM/OTHER) : ");
+        String activity = sc.nextLine();
 
-            // competition
-            System.out.print("Jumlah dokumen : ");
-            int jumlahDokumen = sc.nextInt();
-            System.out.print("Peringkat juara : ");
-            int peringkat = sc.nextInt();
+        // Check if the activity is a recognized competition
+        if (activity.equalsIgnoreCase("BELMAWA") || activity.equalsIgnoreCase("BAKORMA")
+                || activity.equalsIgnoreCase("MANDIRI")) {
 
-            if (jumlahDokumen < 4) {
-                int kurang = 4 - jumlahDokumen;
-                System.out.println("Status : Dokumen tidak lengkap (kurang " + kurang
-                        + " dokumen). Dana penghargaan tidak diberikan.");
+            // Enter the number of documents and competition rank
+            System.out.print("Number of documents : ");
+            int documents = sc.nextInt();
+
+            System.out.print("Competition rank : ");
+            int rank = sc.nextInt();
+
+            // Check if all documents are complete
+            if (documents < 4) {
+                int missingDocs = 4 - documents;
+
+                System.out.println("Status : Incomplete documents (missing " + missingDocs
+                        + " documents). The reward fund will not be given.");
+
             } else {
-                if (peringkat >= 1 && peringkat <= 3) {
-                    System.out.println("Status : Berhak menerima dana penghargaan (juara "
-                            + peringkat + ").");
+
+                // The reward is only given to 1st, 2nd, or 3rd place
+                if (rank >= 1 && rank <= 3) {
+                    System.out.println("Status : Eligible to receive the reward fund (rank "
+                            + rank + ").");
+
                 } else {
-                    System.out.println("Status : Tidak berhak menerima dana penghargaan "
-                            + "(hanya untuk juara 1, 2, atau 3).");
+                    System.out.println("Status : Not eligible to receive the reward fund "
+                            + "(only for 1st, 2nd, or 3rd place).");
                 }
             }
-        } else if (jenis.equalsIgnoreCase("PKM")) {
 
-            // student creativity program
-            System.out.print("Jumlah dokumen : ");
-            int jumlahDokumen = sc.nextInt();
-            System.out.print("Status pendanaan PKM (1 = disetujui, 0 = tidak) : ");
-            int statusPkm = sc.nextInt();
+        } else if (activity.equalsIgnoreCase("PKM")) {
 
-            if (jumlahDokumen < 4) {
-                int kurang = 4 - jumlahDokumen;
-                System.out.println("Status : Dokumen tidak lengkap (kurang " + kurang
-                        + " dokumen). Dana penghargaan tidak diberikan.");
+            // For PKM, check the documents and funding status
+            System.out.print("Number of documents : ");
+            int documents = sc.nextInt();
+
+            System.out.print("PKM funding status (1 = approved, 0 = not approved) : ");
+            int fundingStatus = sc.nextInt();
+
+            // Check if all documents are complete
+            if (documents < 4) {
+                int missingDocs = 4 - documents;
+
+                System.out.println("Status : Incomplete documents (missing " + missingDocs
+                        + " documents). The reward fund will not be given.");
+
             } else {
-                if (statusPkm == 1) {
-                    System.out.println("Status : Berhak menerima dana penghargaan "
-                            + "(proposal PKM disetujui didanai).");
+
+                // Check if the PKM proposal gets funding
+                if (fundingStatus == 1) {
+                    System.out.println("Status : Eligible to receive the reward fund "
+                            + "(PKM proposal approved for funding).");
+
                 } else {
-                    System.out.println("Status : Tidak berhak menerima dana penghargaan "
-                            + "(proposal PKM tidak disetujui didanai).");
+                    System.out.println("Status : Not eligible to receive the reward fund "
+                            + "(PKM proposal was not approved for funding).");
                 }
             }
+
         } else {
-            
-            // other activity
-            System.out.println("Status : Tidak berhak menerima dana penghargaan "
-                    + "(jenis kegiatan tidak termasuk dalam ketentuan).");
+
+            // If the activity is not included, the reward will not be given
+            System.out.println("Status : Not eligible to receive the reward fund "
+                    + "(activity type is not included in the requirements).");
         }
+
         sc.close();
     }
 }
+
 ```
 
 The first if checks whether the activity is a competition (BELMAWA, BAKORMA, or Mandiri). The method equalsIgnoreCase is used, so the input is not case-sensitive. The else if checks PKM, and the last else covers Other, for example Lainnya. This is level 1.
