@@ -40,7 +40,8 @@ git config --global user.email "your-email@example.com"
 
 ### 2.1.2 Running Results / Output Screenshot
 
-> ![Screenshot Program]([https://raw.githubusercontent.com/username/nama-repository/main/images/foto.png](https://github.com/wildanarya1209-collab/PraktikumDaspro30/blob/bb0c408500cfee76d3826acaca71f4770b2e3f51/Screenshot%202026-11-03%20233906.png))
+> <img width="987" height="83" alt="Screenshot 2026-11-03 233906" src="https://github.com/user-attachments/assets/ab997ca0-cb9a-4ddb-9d91-312478255def" />
+
 
 ---
 
@@ -112,7 +113,8 @@ The program has two if statements. The first one checks whether totalHarga is at
 
 ### 2.3.2 Running Results / Output Screenshot
 
-> ![Screenshot Program](https://raw.githubusercontent.com/username/nama-repository/main/images/foto.png)
+> <img width="605" height="345" alt="Screenshot 2026-11-03 234502" src="https://github.com/user-attachments/assets/1b658f74-37c5-4847-8ae2-346b1cd8d6cd" />
+
 
 ---
 
@@ -221,7 +223,8 @@ For Git, the job sheet asks for at least 2 commits. The example messages in the 
 
 ### 2.4.2 Running Results / Output Screenshot
 
-> ![Screenshot Program](https://raw.githubusercontent.com/username/nama-repository/main/images/foto.png)
+> <img width="1002" height="525" alt="Screenshot 2026-11-03 235308" src="https://github.com/user-attachments/assets/cb42415f-5640-49f6-b9d8-bcccdc13ce81" />
+
 
 ---
 
@@ -249,4 +252,8 @@ The job sheet gives a note: always Pull before starting work on a shared reposit
 
 ### 2.5.2 Running Results / Output Screenshot
 
-> ![Screenshot Program](https://raw.githubusercontent.com/username/nama-repository/main/images/foto.png)
+<img width="927" height="615" alt="Screenshot 2026-11-03 232054" src="https://github.com/user-attachments/assets/b93943a9-11e4-4fd8-bf56-628fb57e8283" />
+
+<img width="1383" height="963" alt="Screenshot 2026-11-03 183211" src="https://github.com/user-attachments/assets/e3d14d92-1473-45ff-a913-14f154fa8cc6" />
+
+
