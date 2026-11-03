@@ -40,7 +40,7 @@ git config --global user.email "your-email@example.com"
 
 ### 2.1.2 Running Results / Output Screenshot
 
-> ![Screenshot Program](https://raw.githubusercontent.com/username/nama-repository/main/images/foto.png)
+> ![Screenshot Program]([https://raw.githubusercontent.com/username/nama-repository/main/images/foto.png](https://github.com/wildanarya1209-collab/PraktikumDaspro30/blob/bb0c408500cfee76d3826acaca71f4770b2e3f51/Screenshot%202026-11-03%20233906.png))
 
 ---
 
